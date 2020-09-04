@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello
+  namespace: sample
+  labels:
+    app: hello
+spec:
+  selector:
+    matchlLables:
+      app: hello
+  template:
+    metadata:
+      labels:
+        app: hello
+    spec:
+      containers:
+      - bane:hello
+        image: linuxacademycontent/gitops:hellov1.1
